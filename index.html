@@ -139,6 +139,13 @@
       clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
     }
 
+    .logo-img {
+      height: 28px;
+      width: auto;
+      mix-blend-mode: screen; /* Remove fundo preto da imagem */
+      display: block;
+    }
+
     .logo-sm {
       font-size: 21px;
     }
@@ -777,7 +784,7 @@
   <!-- NAV BAR -->
   <header class="topbar">
     <nav class="shell nav" aria-label="Navegação da proposta">
-      <a href="#hero" class="kapel-logo logo-sm"><span>K</span><span class="a-mark" aria-label="A"></span><span>P</span><span>E</span><span>L</span></a>
+      <a href="#hero"><img src="logo.png" alt="KAPEL" class="logo-img"></a>
       <div class="nav-links">
         <a href="#contexto">Contexto</a>
         <a href="#diagnostico">Diagnóstico</a>
@@ -1211,7 +1218,7 @@
 
   <footer class="footer">
     <div class="shell">
-      <div class="kapel-logo logo-sm" style="margin-bottom: 12px;"><span>K</span><span class="a-mark"></span><span>P</span><span>E</span><span>L</span></div>
+      <img src="logo.png" alt="KAPEL" class="logo-img" style="margin-bottom: 12px;">
       <p class="body-sm mono" style="margin: 0;">KAPEL Design System v1.0 — Acquisition Control. Built for growth.</p>
     </div>
   </footer>
