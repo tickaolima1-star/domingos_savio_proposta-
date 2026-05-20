@@ -1,0 +1,1286 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Estratégia de Presença Digital — Deputado Domingos Sávio</title>
+  <meta name="description" content="Proposta estratégica de distribuição de conteúdo e tráfego pago KAPEL." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black-950: #050505;
+      --black-900: #0A0A0A;
+      --black-850: #0E0F0E;
+      --black-800: #121312;
+      --graphite-700: #1B1D1B;
+      --graphite-600: #252925;
+      --graphite-500: #3A403A;
+      --muted-400: #737A73;
+      --muted-300: #9EA49E;
+      --white-100: #F2F2ED;
+      --white-200: #D7D8D0;
+      --green-900: #111A14;
+      --green-800: #1C2E24;
+      --green-700: #263F31;
+      --green-600: #335943;
+      --green-500: #44755A;
+      --border-subtle: rgba(242, 242, 237, .1);
+      --border-hover: rgba(51, 89, 67, .75);
+      --surface-card: rgba(18, 19, 18, .86);
+      --surface-hover: rgba(27, 29, 27, .92);
+      --font-display: 'Inter Tight', system-ui, sans-serif;
+      --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+      --container: 1180px;
+      --space-1: 4px;
+      --space-2: 8px;
+      --space-3: 12px;
+      --space-4: 16px;
+      --space-5: 24px;
+      --space-6: 32px;
+      --space-7: 48px;
+      --space-8: 64px;
+      --space-9: 96px;
+      --ease-control: cubic-bezier(.16, 1, .3, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background:
+        linear-gradient(rgba(255, 255, 255, .018) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, .018) 1px, transparent 1px),
+        radial-gradient(circle at 74% 12%, rgba(38, 63, 49, .28), transparent 30%),
+        var(--black-950);
+      background-size: 40px 40px, 40px 40px, auto, auto;
+      color: var(--white-100);
+      font-family: var(--font-display);
+      line-height: 1.45;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    code {
+      font-family: var(--font-mono);
+    }
+
+    .shell {
+      width: min(100% - 40px, var(--container));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(5, 5, 5, .82);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(242, 242, 237, .1);
+    }
+
+    .nav {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav-links a {
+      font: 600 11px/1 var(--font-mono);
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--muted-300);
+      transition: color .2s var(--ease-control);
+    }
+
+    .nav-links a:hover {
+      color: var(--white-100);
+    }
+
+    .kapel-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: .18em;
+      font-weight: 900;
+      letter-spacing: .08em;
+      line-height: .85;
+      color: var(--white-100);
+      text-transform: uppercase;
+    }
+
+    .kapel-logo .a-mark {
+      width: .60em;
+      height: .76em;
+      display: inline-block;
+      position: relative;
+      transform: translateY(.03em);
+      background: var(--green-600);
+      clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    }
+
+    .logo-sm {
+      font-size: 21px;
+    }
+
+    .logo-lg {
+      font-size: clamp(44px, 8vw, 104px);
+    }
+
+    .section {
+      padding: var(--space-9) 0;
+      border-bottom: 1px solid rgba(242, 242, 237, .1);
+    }
+
+    .section.compact {
+      padding: var(--space-8) 0;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: grid;
+      place-items: center;
+      position: relative;
+      overflow: hidden;
+      padding: 6% 0;
+      border-bottom: 1px solid rgba(242, 242, 237, .1);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 4%;
+      border: 1px solid rgba(242, 242, 237, .06);
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: var(--space-8);
+      align-items: center;
+    }
+
+    .label {
+      font: 700 11px/1 var(--font-mono);
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--muted-300);
+      margin: 0 0 var(--space-4);
+    }
+
+    .label.green {
+      color: var(--green-500);
+    }
+
+    .h1 {
+      font-size: clamp(42px, 6vw, 76px);
+      line-height: .92;
+      letter-spacing: -.04em;
+      font-weight: 900;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    .h2 {
+      font-size: clamp(32px, 4vw, 56px);
+      line-height: .95;
+      letter-spacing: -.03em;
+      font-weight: 800;
+      margin: 0;
+    }
+
+    .h3 {
+      font-size: clamp(20px, 2.5vw, 32px);
+      line-height: 1.05;
+      letter-spacing: -.02em;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .h4 {
+      font-size: 16px;
+      line-height: 1.15;
+      letter-spacing: -.01em;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .lead {
+      font-size: clamp(16px, 1.8vw, 21px);
+      line-height: 1.4;
+      color: var(--white-200);
+      max-width: 620px;
+      margin: var(--space-4) 0 0;
+    }
+
+    .body-lg {
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--muted-300);
+    }
+
+    .body-md {
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--muted-300);
+    }
+
+    .body-sm {
+      font-size: 13px;
+      line-height: 1.5;
+      color: var(--muted-400);
+    }
+
+    .mono {
+      font-family: var(--font-mono);
+      letter-spacing: .02em;
+    }
+
+    .command-panel {
+      background: linear-gradient(180deg, rgba(28, 46, 36, .45), rgba(18, 19, 18, .92));
+      border: 1px solid rgba(242, 242, 237, .12);
+      padding: var(--space-6);
+      min-height: 480px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, .06);
+    }
+
+    .panel-header {
+      border-bottom: 1px solid rgba(242, 242, 237, .1);
+      padding-bottom: 12px;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .panel-title {
+      font: 700 11px/1 var(--font-mono);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--green-500);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .status-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      border-bottom: 1px solid rgba(242, 242, 237, .06);
+      padding: 10px 0;
+    }
+
+    .status-row:last-child {
+      border-bottom: none;
+    }
+
+    .status-key {
+      font: 600 10px/1 var(--font-mono);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted-400);
+    }
+
+    .status-value {
+      font: 700 11px/1 var(--font-mono);
+      letter-spacing: .05em;
+      color: var(--white-100);
+    }
+
+    .console-message {
+      background: rgba(5, 5, 5, 0.6);
+      border: 1px solid rgba(242, 242, 237, .08);
+      padding: 10px;
+      border-left: 2px solid var(--green-600);
+      font: 400 11px/1.4 var(--font-mono);
+      color: var(--muted-300);
+      min-height: 52px;
+      margin-top: 14px;
+    }
+
+    .panel-toggles {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-top: var(--space-4);
+    }
+
+    .toggle-btn {
+      background: rgba(242, 242, 237, .03);
+      border: 1px solid rgba(242, 242, 237, .08);
+      color: var(--muted-400);
+      font: 700 9px/1 var(--font-mono);
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: 10px 4px;
+      cursor: pointer;
+      transition: all 0.2s var(--ease-control);
+      text-align: center;
+    }
+
+    .toggle-btn:hover {
+      background: rgba(242, 242, 237, .08);
+      color: var(--white-100);
+    }
+
+    .toggle-btn.active {
+      background: var(--green-800);
+      border-color: var(--green-600);
+      color: var(--white-100);
+      box-shadow: 0 0 10px rgba(51, 89, 67, .25);
+    }
+
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: var(--space-6);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 0 22px;
+      border: 1px solid rgba(242, 242, 237, .14);
+      font: 700 11px/1 var(--font-mono);
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      transition: transform .25s var(--ease-control), background .25s var(--ease-control), border-color .25s var(--ease-control), color .25s var(--ease-control);
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--green-800);
+      color: var(--white-100);
+      border-color: var(--green-600);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      background: var(--green-700);
+      border-color: var(--white-200);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--white-200);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(242, 242, 237, .06);
+      color: var(--white-100);
+      transform: translateY(-2px);
+    }
+
+    .doc-head {
+      display: flex;
+      justify-content: space-between;
+      gap: var(--space-6);
+      align-items: end;
+      margin-bottom: var(--space-7);
+    }
+
+    .doc-head p {
+      max-width: 520px;
+      margin: 0;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: var(--space-5);
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--space-5);
+    }
+
+    .card {
+      background: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      padding: var(--space-6);
+      transition: transform .25s var(--ease-control), border-color .25s var(--ease-control), background .25s var(--ease-control);
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--border-hover);
+      background: var(--surface-hover);
+    }
+
+    .card-muted {
+      background: rgba(242, 242, 237, .03);
+    }
+
+    .card-asset {
+      border-left: 3px solid var(--green-600);
+    }
+
+    .card-improvement {
+      border-left: 3px solid var(--graphite-500);
+    }
+
+    .spec-row {
+      display: grid;
+      grid-template-columns: 220px 1fr 180px;
+      gap: var(--space-5);
+      align-items: start;
+      padding: var(--space-5) 0;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .spec-row:last-child {
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .spec-name,
+    .spec-size {
+      font: 600 12px/1.4 var(--font-mono);
+      color: var(--muted-400);
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    .spec-size {
+      text-align: right;
+      text-transform: none;
+      letter-spacing: 0;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font: 600 9px/1 var(--font-mono);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .badge-active {
+      color: var(--green-500);
+      border-color: var(--green-700);
+      background: rgba(28, 46, 36, .4);
+    }
+
+    .badge-neutral {
+      color: var(--muted-300);
+      background: rgba(242, 242, 237, .04);
+    }
+
+    .badge-alert {
+      color: #9E3333;
+      border-color: rgba(122, 40, 40, .6);
+      background: rgba(75, 20, 20, .15);
+    }
+
+    .scanline {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .scanline::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -40%;
+      height: 40%;
+      background: linear-gradient(transparent, rgba(242, 242, 237, .07), transparent);
+      animation: scan 3.5s var(--ease-control) infinite;
+      pointer-events: none;
+    }
+
+    @keyframes scan {
+      0% {
+        transform: translateY(0);
+      }
+
+      100% {
+        transform: translateY(380%);
+      }
+    }
+
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--green-500);
+      border-radius: 999px;
+      box-shadow: 0 0 0 0 rgba(68, 117, 90, 0.7);
+      animation: pulse 1.8s infinite;
+      display: inline-block;
+    }
+
+    @keyframes pulse {
+      70% {
+        box-shadow: 0 0 0 8px rgba(68, 117, 90, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(68, 117, 90, 0);
+      }
+    }
+
+    .rule-list {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted-300);
+    }
+
+    .rule-list li {
+      margin: 8px 0;
+    }
+
+    .tag-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: var(--space-4);
+    }
+
+    .tag {
+      background: rgba(242, 242, 237, .03);
+      border: 1px solid rgba(242, 242, 237, .08);
+      padding: 6px 14px;
+      font: 500 13px/1 var(--font-display);
+      color: var(--white-200);
+      transition: all 0.25s var(--ease-control);
+    }
+
+    .tag:hover {
+      border-color: var(--border-hover);
+      color: var(--white-100);
+      background: rgba(28, 46, 36, .15);
+    }
+
+    /* Calculator styles */
+    .calculator-container {
+      background: var(--surface-card);
+      border: 1px solid var(--border-subtle);
+      padding: var(--space-6);
+      margin-top: var(--space-6);
+    }
+
+    .slider-wrapper {
+      margin: var(--space-5) 0;
+    }
+
+    .slider-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .slider-label {
+      font: 700 11px/1 var(--font-mono);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted-300);
+    }
+
+    .slider-value {
+      font: 700 24px/1 var(--font-display);
+      color: var(--white-100);
+    }
+
+    .range-slider {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 6px;
+      background: var(--graphite-600);
+      outline: none;
+      transition: background 0.3s;
+      border: 1px solid rgba(242, 242, 237, 0.1);
+    }
+
+    .range-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      background: var(--green-600);
+      border: 2px solid var(--white-100);
+      cursor: pointer;
+      transition: transform 0.1s;
+    }
+
+    .range-slider::-webkit-slider-thumb:hover {
+      transform: scale(1.15);
+      background: var(--green-500);
+    }
+
+    .calc-results {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: var(--space-5);
+      border-top: 1px solid var(--border-subtle);
+      padding-top: var(--space-5);
+    }
+
+    .calc-result-box {
+      background: rgba(5, 5, 5, 0.3);
+      border: 1px solid rgba(242, 242, 237, .06);
+      padding: var(--space-4);
+      text-align: center;
+    }
+
+    .calc-result-box.total {
+      background: rgba(28, 46, 36, .15);
+      border-color: rgba(51, 89, 67, .35);
+    }
+
+    .calc-result-label {
+      font: 600 10px/1 var(--font-mono);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted-400);
+      margin-bottom: 8px;
+    }
+
+    .calc-result-val {
+      font: 800 24px/1 var(--font-display);
+      color: var(--white-100);
+    }
+
+    .calc-result-val.green {
+      color: var(--green-500);
+    }
+
+    .projection-notes {
+      margin-top: 12px;
+      font: 500 11px/1.4 var(--font-mono);
+      color: var(--muted-400);
+      text-align: center;
+    }
+
+    /* Scope Grid Styling */
+    .scope-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-5);
+      margin-top: var(--space-6);
+    }
+
+    .scope-box {
+      border: 1px solid var(--border-subtle);
+      padding: var(--space-5);
+      background: var(--surface-card);
+    }
+
+    .scope-box.included {
+      border-top: 4px solid var(--green-600);
+    }
+
+    .scope-box.excluded {
+      border-top: 4px solid var(--graphite-500);
+      background: rgba(18, 19, 18, 0.4);
+    }
+
+    /* Footer styling */
+    .footer {
+      padding: var(--space-8) 0;
+      border-top: 1px solid var(--border-subtle);
+      text-align: center;
+      color: var(--muted-400);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 960px) {
+      .hero-grid,
+      .grid-2,
+      .grid-3,
+      .scope-grid,
+      .calc-results {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        height: auto;
+        padding: 18px 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+        gap: 12px;
+      }
+
+      .doc-head {
+        flex-direction: column;
+        align-items: start;
+        gap: 12px;
+      }
+
+      .spec-row {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .spec-size {
+        text-align: left;
+        margin-top: 4px;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 10% 0;
+      }
+
+      .hero::before {
+        inset: 2%;
+      }
+
+      .command-panel {
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAV BAR -->
+  <header class="topbar">
+    <nav class="shell nav" aria-label="Navegação da proposta">
+      <a href="#hero" class="kapel-logo logo-sm"><span>K</span><span class="a-mark" aria-label="A"></span><span>P</span><span>E</span><span>L</span></a>
+      <div class="nav-links">
+        <a href="#contexto">Contexto</a>
+        <a href="#diagnostico">Diagnóstico</a>
+        <a href="#estrategia">Estratégia</a>
+        <a href="#escopo">Escopo</a>
+        <a href="#indicadores">Indicadores</a>
+        <a href="#investimento">Investimento</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. HERO SECTION -->
+    <section id="hero" class="hero">
+      <div class="shell hero-grid">
+        <div>
+          <p class="label green">Proposta Estratégica</p>
+          <h1 class="h1">Estratégia de<br>Presença Digital</h1>
+          <p class="lead">Proposta de tráfego pago e distribuição inteligente para o <strong>Deputado Domingos Sávio</strong>.</p>
+          <p class="body-md" style="margin-top: 20px; max-width: 580px;">
+            Aumentar a presença, o alcance e o engajamento estratégico utilizando a autoridade já consolidada no cenário político mineiro.
+          </p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="#investimento">Ver Investimento</a>
+            <a class="btn btn-secondary" href="#contexto">Análise Estratégica</a>
+          </div>
+        </div>
+
+        <!-- COMMAND PANEL (INTERACTIVE SIMULATOR) -->
+        <div class="command-panel scanline" id="consolePanel">
+          <div>
+            <div class="panel-header">
+              <span class="panel-title"><span class="pulse-dot"></span> Console de Controle Meta Ads</span>
+              <span class="badge badge-active" style="font-size: 8px;">Sistema: Ativo</span>
+            </div>
+            <div class="status-row"><span class="status-key">Foco da Campanha</span><span class="status-value" id="focoVal">Reconhecimento</span></div>
+            <div class="status-row"><span class="status-key">Público-Alvo</span><span class="status-value" id="publicoVal">Minas Gerais (Geral)</span></div>
+            <div class="status-row"><span class="status-key">Frequência Semanal</span><span class="status-value" id="freqVal">3.2 Impactos por user</span></div>
+            <div class="status-row"><span class="status-key">Divisão de Verba</span><span class="status-value" id="verbaVal">50% do Orçamento</span></div>
+            <div class="status-row"><span class="status-key">Métrica Primária</span><span class="status-value" id="metricaVal">Custo por Mil (CPM)</span></div>
+            
+            <div class="console-message">
+              <span style="color: var(--green-500); font-weight: 700;">Mensagem ativa:</span> <span id="msgVal">"Minas precisa de coragem em Brasília e trabalho nas cidades..."</span>
+            </div>
+          </div>
+          
+          <div>
+            <p class="body-sm mono" style="margin: 12px 0 6px; text-transform: uppercase; font-size: 10px;">Simular frentes estratégicas:</p>
+            <div class="panel-toggles">
+              <button class="toggle-btn active" onclick="toggleConsole('rec', this)">Reconhecimento</button>
+              <button class="toggle-btn" onclick="toggleConsole('eng', this)">Engajamento</button>
+              <button class="toggle-btn" onclick="toggleConsole('rem', this)">Remarketing</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. CONTEXTO -->
+    <section id="contexto" class="section">
+      <div class="shell">
+        <div class="doc-head">
+          <div>
+            <p class="label">01 / Contexto Atual</p>
+            <h2 class="h2">Base Sólida, Novos Alcances.</h2>
+          </div>
+          <p class="body-md">O deputado Domingos Sávio já possui uma presença política digital altamente representativa. O foco do trabalho não é iniciar do zero, mas sim otimizar a distribuição do conteúdo para converter a audiência existente em lembrança de imagem ativa.</p>
+        </div>
+
+        <div class="grid-3" style="margin-top: 40px;">
+          <div class="card card-asset">
+            <span class="badge badge-active" style="margin-bottom: var(--space-3)">Ativo Consolidado</span>
+            <h3 class="h3" style="font-size: 24px; margin: 12px 0 8px;">390 mil+ Seguidores</h3>
+            <p class="body-md">Volume expressivo de público interessado com forte identificação ideológica.</p>
+          </div>
+          <div class="card card-asset">
+            <span class="badge badge-active" style="margin-bottom: var(--space-3)">Identidade</span>
+            <h3 class="h3" style="font-size: 24px; margin: 12px 0 8px;">Direita Alinhada</h3>
+            <p class="body-md">Posicionamento conservador claro, gerando forte engajamento espontâneo.</p>
+          </div>
+          <div class="card card-asset">
+            <span class="badge badge-active" style="margin-bottom: var(--space-3)">Reputação</span>
+            <h3 class="h3" style="font-size: 24px; margin: 12px 0 8px;">Autoridade Política</h3>
+            <p class="body-md">Reconhecimento consolidado em Minas Gerais e forte atuação pública em Brasília.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. DIAGNÓSTICO INICIAL -->
+    <section id="diagnostico" class="section compact">
+      <div class="shell">
+        <div class="doc-head">
+          <div>
+            <p class="label">02 / Diagnóstico Inicial</p>
+            <h2 class="h2">Estrutura vs. Distribuição</h2>
+          </div>
+          <p class="body-md">Domingos Sávio não sofre por falta de conteúdo, mas sim pela necessidade de um sistema que transforme posts institucionais em ativos de presença digital estratégica.</p>
+        </div>
+
+        <div class="grid-2">
+          <!-- Coluna Ativos -->
+          <div>
+            <p class="label green" style="margin-bottom: var(--space-4);">Forças Atuais (Ativos)</p>
+            <div style="display: grid; gap: var(--space-3);">
+              <div class="card card-asset">
+                <h4 class="h4" style="color: var(--white-100); margin-bottom: 6px;">Imagem de Confiança</h4>
+                <p class="body-sm">Público associa o deputado com pautas de valores e transparência legislativa.</p>
+              </div>
+              <div class="card card-asset">
+                <h4 class="h4" style="color: var(--white-100); margin-bottom: 6px;">Conteúdo de Compartilhamento</h4>
+                <p class="body-sm">Materiais com potencial de cortes e disseminação orgânica viral em pautas quentes.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna Pontos de Melhoria -->
+          <div>
+            <p class="label" style="color: #9E3333; margin-bottom: var(--space-4);">Pontos de Melhoria</p>
+            <div style="display: grid; gap: var(--space-3);">
+              <div class="card card-improvement">
+                <h4 class="h4" style="color: var(--white-100); margin-bottom: 6px;">Comunicação Muito Institucional</h4>
+                <p class="body-sm">Formatos formais limitam a conexão mais próxima e a atração de públicos mais jovens.</p>
+              </div>
+              <div class="card card-improvement">
+                <h4 class="h4" style="color: var(--white-100); margin-bottom: 6px;">Falta de Remarketing e Frequência</h4>
+                <p class="body-sm">Pessoas que interagem uma vez não são reimpactadas de maneira programada, enfraquecendo a lembrança.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Banner com a tese central -->
+        <div class="card card-muted" style="margin-top: var(--space-6); border-left: 4px solid var(--green-600);">
+          <p class="body-lg mono" style="margin: 0; font-weight: 600; color: var(--white-100);">
+            "Domingos Sávio não sofre por falta de conteúdo. O ponto principal é transformar esse conteúdo em presença digital estratégica."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. OBJETIVO DO TRABALHO -->
+    <section class="section" style="background: rgba(18, 19, 18, 0.4);">
+      <div class="shell">
+        <p class="label green">03 / Objetivo</p>
+        <h2 class="h1" style="max-width: 900px; margin-bottom: var(--space-5);">Fortalecer a presença digital e ampliar a lembrança da imagem pública.</h2>
+        
+        <div class="grid-2" style="margin-top: var(--space-6);">
+          <div>
+            <h3 class="h3" style="margin-bottom: 12px;">Foco da Distribuição</h3>
+            <p class="body-md">
+              Estruturar o tráfego pago para atuar em três camadas: alcance de novas lideranças, engajamento nos temas-chave do mandato, e retenção (remarketing) para garantir que quem interage com o parlamentar seja exposto à sua mensagem de forma contínua.
+            </p>
+          </div>
+          
+          <div class="card card-muted" style="border: 1px solid rgba(242, 242, 237, 0.08); display: flex; flex-direction: column; justify-content: center;">
+            <p class="label" style="color: var(--muted-400); margin: 0 0 8px;">Nota Importante</p>
+            <p class="body-md" style="font-weight: 500; color: var(--white-200); margin: 0;">
+              O objetivo estratégico do tráfego não é prometer voto ou eleição direta. O foco é ampliar a presença de forma segmentada, garantindo alta lembrança do nome e consistência de mensagem.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. ESTRATÉGIA -->
+    <section id="estrategia" class="section">
+      <div class="shell">
+        <div class="doc-head">
+          <div>
+            <p class="label">04 / As Três Frentes</p>
+            <h2 class="h2">A Estratégia de Mídia</h2>
+          </div>
+          <p class="body-md">Uma divisão inteligente do orçamento para garantir capilaridade e retenção do público impactado.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <span class="badge badge-active">Camada 01</span>
+            <h3 class="h3" style="font-size: 22px; margin: 18px 0 12px;">Reconhecimento</h3>
+            <p class="body-md" style="margin-bottom: 18px;">Campanhas de distribuição ampla para que o nome e imagem do deputado circulem ativamente em regiões e municípios estratégicos.</p>
+            <ul class="rule-list" style="font-size: 13px;">
+              <li>Foco em Alcance e Impressões</li>
+              <li>Fixação da imagem pública</li>
+              <li>Manutenção do nome em destaque</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <span class="badge badge-active">Camada 02</span>
+            <h3 class="h3" style="font-size: 22px; margin: 18px 0 12px;">Engajamento</h3>
+            <p class="body-md" style="margin-bottom: 18px;">Distribuição focada nos posts de maior valor social (opinião, posicionamento ideológico, pautas de direita) para obter interações qualificadas.</p>
+            <ul class="rule-list" style="font-size: 13px;">
+              <li>Foco em Likes, Comments e Visitas</li>
+              <li>Crescimento de base orgânica</li>
+              <li>Criação de debates e engajamento</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <span class="badge badge-active">Camada 03</span>
+            <h3 class="h3" style="font-size: 22px; margin: 18px 0 12px;">Remarketing</h3>
+            <p class="body-md" style="margin-bottom: 18px;">Reimpactar quem já assistiu a vídeos, interagiu com posts ou visitou o perfil do deputado, criando alta frequência e fixação.</p>
+            <ul class="rule-list" style="font-size: 13px;">
+              <li>Públicos de engajamento do Insta</li>
+              <li>Aproveitamento de leads mornos</li>
+              <li>Alta frequência de impacto</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. DIRECIONAMENTO DE COMUNICAÇÃO -->
+    <section class="section" style="background: var(--green-900); border-bottom: 1px solid rgba(51, 89, 67, .3);">
+      <div class="shell">
+        <p class="label green">05 / Direcionamento e Mensagem</p>
+        <h2 class="h1" style="font-size: clamp(38px, 6vw, 70px); max-width: 980px; margin-bottom: var(--space-5);">
+          “Minas precisa de coragem em Brasília e trabalho nas cidades.”
+        </h2>
+        
+        <div class="grid-2">
+          <div>
+            <p class="body-lg" style="color: var(--white-200);">
+              Esta linha narrativa posiciona o deputado como uma figura indispensável de oposição federal, ao mesmo tempo em que destaca a sua dedicação direta ao desenvolvimento das bases municipais de Minas.
+            </p>
+          </div>
+          <div>
+            <p class="label" style="color: var(--green-500);">Pilares de Comunicação Prioritários:</p>
+            <div class="tag-container">
+              <span class="tag">Defesa de Minas</span>
+              <span class="tag">Direita Conservadora</span>
+              <span class="tag">Família e Valores</span>
+              <span class="tag">Oposição ao PT / Esquerda</span>
+              <span class="tag">Trabalho no Interior</span>
+              <span class="tag">Experiência Política</span>
+              <span class="tag">Proximidade com as Cidades</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. ESCOPO DO TRABALHO -->
+    <section id="escopo" class="section">
+      <div class="shell">
+        <div class="doc-head">
+          <div>
+            <p class="label">06 / Divisão de Responsabilidades</p>
+            <h2 class="h2">Escopo do Projeto</h2>
+          </div>
+          <p class="body-md">Esclarecer as frentes que fazem parte da gestão operacional de mídia do tráfego pago, diferenciando a criação e a distribuição de conteúdo.</p>
+        </div>
+
+        <div class="scope-grid">
+          <!-- O que será feito -->
+          <div class="scope-box included">
+            <h3 class="h3" style="font-size: 22px; color: var(--green-500); margin-bottom: var(--space-4);">O que será feito (Incluso)</h3>
+            <ul class="rule-list">
+              <li><strong>Diagnóstico inicial:</strong> Auditoria completa da conta de anúncios e públicos.</li>
+              <li><strong>Estrutura de Campanhas:</strong> Configuração e criação de campanhas no Meta Ads Manager.</li>
+              <li><strong>Públicos Alvo:</strong> Criação e refinamento de segmentações regionais e demográficas.</li>
+              <li><strong>Campanhas Ativas:</strong> Gestão de reconhecimento, engajamento e remarketing.</li>
+              <li><strong>Otimizações Semanais:</strong> Análise de CPA, CTR e alocações de verba diária.</li>
+              <li><strong>Consultoria de Criativos:</strong> Direcionamento estratégico dos conteúdos com maior potencial de mídia.</li>
+            </ul>
+          </div>
+
+          <!-- O que não está incluso -->
+          <div class="scope-box excluded">
+            <h3 class="h3" style="font-size: 22px; color: var(--muted-300); margin-bottom: var(--space-4);">O que não está incluso</h3>
+            <ul class="rule-list">
+              <li><strong>Criação de Conteúdo:</strong> Postagens diárias e redação de roteiros para o feed orgânico.</li>
+              <li><strong>Audiovisual:</strong> Gravação e edição de vídeos (continua com a equipe atual do deputado).</li>
+              <li><strong>Design Gráfico:</strong> Criação de posts estáticos ou criativos gráficos do zero.</li>
+              <li><strong>Social Media:</strong> Respostas de directs, comentários ou gestão da comunidade.</li>
+              <li><strong>Produção Geral:</strong> Planejamento e produção de materiais físicos ou eventos.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. INDICADORES ACOMPANHADOS -->
+    <section id="indicadores" class="section compact" style="background: rgba(18, 19, 18, 0.3);">
+      <div class="shell">
+        <div class="doc-head">
+          <div>
+            <p class="label">07 / Indicadores Chave</p>
+            <h2 class="h2">Métricas de Performance</h2>
+          </div>
+          <p class="body-md">Métricas técnicas que serão analisadas semanalmente para medir a saúde do projeto e o nível de penetração da mensagem pública.</p>
+        </div>
+
+        <div class="grid-3" style="margin-top: 24px;">
+          <div class="card card-muted">
+            <p class="label green">Distribuição</p>
+            <h3 class="h3" style="font-size: 22px; margin-bottom: 8px;">Alcance & Frequência</h3>
+            <p class="body-sm">Número de pessoas únicas que visualizaram a mensagem e a constância desse impacto por semana.</p>
+          </div>
+
+          <div class="card card-muted">
+            <p class="label green">Interação</p>
+            <h3 class="h3" style="font-size: 22px; margin-bottom: 8px;">Custo por Engajamento</h3>
+            <p class="body-sm">Eficiência financeira no ganho de interações (curtidas, salvamentos, compartilhamentos).</p>
+          </div>
+
+          <div class="card card-muted">
+            <p class="label green">Retenção</p>
+            <h3 class="h3" style="font-size: 22px; margin-bottom: 8px;">Visualizações de Vídeo</h3>
+            <p class="body-sm">Taxa de retenção e tempo de visualização nos vídeos institucionais e de posicionamento.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. INVESTIMENTO -->
+    <section id="investimento" class="section">
+      <div class="shell">
+        <div class="doc-head">
+          <div>
+            <p class="label">08 / Investimento Geral</p>
+            <h2 class="h2">Planejamento Orçamentário</h2>
+          </div>
+          <p class="body-md">Investimento voltado à contratação técnica de gestão estratégica e definição do aporte mensal em anúncios.</p>
+        </div>
+
+        <div>
+          <!-- Gestão de tráfego fixo -->
+          <div class="spec-row">
+            <div class="spec-name">Gestão de Tráfego</div>
+            <div>
+              <h4 class="h4">R$ 1.500 /mês</h4>
+              <p class="body-sm" style="margin-top: 4px;">Planejamento estratégico de mídia, configuração técnica da conta, criação de campanhas no Meta, otimizações de orçamentos e relatórios semanais.</p>
+            </div>
+            <div class="spec-size"><span class="badge badge-active">Fixo Recorrente</span></div>
+          </div>
+
+          <!-- Verba de mídia variável -->
+          <div class="spec-row">
+            <div class="spec-name">Verba de Mídia Sugerida</div>
+            <div>
+              <h4 class="h4">R$ 3.000 a R$ 5.000 /mês</h4>
+              <p class="body-sm" style="margin-top: 4px;">Orçamento investido integral e diretamente nas plataformas Meta Ads. Ajustável conforme o cronograma e os focos de atuação.</p>
+            </div>
+            <div class="spec-size"><span class="badge badge-neutral">Pago à plataforma</span></div>
+          </div>
+        </div>
+
+        <!-- CALCULADORA DE INVESTIMENTO INTERATIVA -->
+        <div class="calculator-container">
+          <p class="label green">Simulador Dinâmico de Projeção Mensal</p>
+          <p class="body-sm" style="margin-bottom: 24px;">Arraste o slider abaixo para ajustar o orçamento de mídia recomendado e prever o alcance geral estimado da estratégia digital do Deputado.</p>
+          
+          <div class="slider-wrapper">
+            <div class="slider-header">
+              <span class="slider-label">Orçamento de Mídia:</span>
+              <span class="slider-value" id="budgetLabel">R$ 4.000</span>
+            </div>
+            <input type="range" min="3000" max="5000" step="500" value="4000" class="range-slider" id="budgetSlider" oninput="updateCalculator(this.value)">
+          </div>
+
+          <div class="calc-results">
+            <div class="calc-result-box">
+              <div class="calc-result-label">Gestão de Tráfego</div>
+              <div class="calc-result-val">R$ 1.500</div>
+            </div>
+            <div class="calc-result-box">
+              <div class="calc-result-label">Verba de Mídia</div>
+              <div class="calc-result-val" id="mediaValCalc">R$ 4.000</div>
+            </div>
+            <div class="calc-result-box total">
+              <div class="calc-result-label" style="color: var(--green-500);">Investimento Total</div>
+              <div class="calc-result-val green" id="totalValCalc">R$ 5.500</div>
+            </div>
+          </div>
+
+          <div class="calc-results" style="grid-template-columns: 1fr 1fr; margin-top: 14px; border: none; padding: 0;">
+            <div class="calc-result-box" style="background: rgba(242, 242, 237, 0.01);">
+              <div class="calc-result-label">Projeção Mensal de Alcance Único</div>
+              <div class="calc-result-val" id="reachCalc" style="font-size: 21px;">~ 333.300 mineiros</div>
+            </div>
+            <div class="calc-result-box" style="background: rgba(242, 242, 237, 0.01);">
+              <div class="calc-result-label">Projeção de Impressões (Visualizações)</div>
+              <div class="calc-result-val" id="impressionsCalc" style="font-size: 21px;">~ 499.950 exibições</div>
+            </div>
+          </div>
+
+          <p class="projection-notes">
+            *As estimativas acima consideram um CPM médio de R$ 12,00 e uma taxa de frequência de 1.5 exibições por usuário único. Os dados são projeções estatísticas e podem variar.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. OBSERVAÇÕES E PRÓXIMAS FASES -->
+    <section class="section compact" style="background: rgba(18, 19, 18, 0.2);">
+      <div class="shell">
+        <div class="doc-head">
+          <div>
+            <p class="label">09 / Próximas Fases</p>
+            <h2 class="h2">Escalabilidade Futura</h2>
+          </div>
+        </div>
+
+        <div class="card card-muted" style="border-left: 4px solid var(--green-600); padding: var(--space-5);">
+          <h4 class="h4" style="margin-bottom: 12px; color: var(--white-100);">Observação sobre a evolução do projeto:</h4>
+          <p class="body-md">
+            Esta primeira fase tem como foco consolidar o reconhecimento, o engajamento e a presença de forma contínua. Caso o projeto expanda de complexidade no futuro — seja com aumento expressivo da verba de mídia, volume de campanhas regionalizadas mais densas ou novos objetivos políticos —, os honorários de gestão e acompanhamento estratégico poderão ser readequados proporcionalmente à complexidade da estrutura.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. ENCERRAMENTO -->
+    <section class="section">
+      <div class="shell">
+        <div class="card card-muted" style="text-align: center; padding: 70px 24px; border: 1px solid rgba(51, 89, 67, .25);">
+          <p class="label green" style="margin-bottom: var(--space-4);">KAPEL — Sistema de Aquisição</p>
+          <h2 class="h2" style="margin-bottom: var(--space-4); text-transform: uppercase;">Vamos iniciar a distribuição?</h2>
+          <p class="body-md" style="max-width: 600px; margin: 0 auto var(--space-6);">
+            Na comunicação política contemporânea, não basta apenas criar o conteúdo. É imperativo atingir o público certo com frequência e precisão de mensagem.
+          </p>
+          <div class="btn-row" style="justify-content: center;">
+            <a class="btn btn-primary" href="https://api.whatsapp.com/send/?phone=5531984373797&text&type=phone_number&app_absent=0" target="_blank">Aprovar Proposta</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell">
+      <div class="kapel-logo logo-sm" style="margin-bottom: 12px;"><span>K</span><span class="a-mark"></span><span>P</span><span>E</span><span>L</span></div>
+      <p class="body-sm mono" style="margin: 0;">KAPEL Design System v1.0 — Acquisition Control. Built for growth.</p>
+    </div>
+  </footer>
+
+  <!-- INTERACTIVE LOGIC -->
+  <script>
+    // Toggle para o Painel de Comando
+    function toggleConsole(type, element) {
+      // Remove class active de todos os botoes
+      const buttons = document.querySelectorAll('.toggle-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      
+      // Adiciona no clicado
+      element.classList.add('active');
+
+      // Elementos do painel
+      const foco = document.getElementById('focoVal');
+      const publico = document.getElementById('publicoVal');
+      const freq = document.getElementById('freqVal');
+      const verba = document.getElementById('verbaVal');
+      const metrica = document.getElementById('metricaVal');
+      const msg = document.getElementById('msgVal');
+
+      // Valores conforme tipo
+      if (type === 'rec') {
+        foco.innerText = 'Reconhecimento';
+        publico.innerText = 'Minas Gerais (Geral)';
+        freq.innerText = '3.2 Impactos por user';
+        verba.innerText = '50% do Orçamento';
+        metrica.innerText = 'Custo por Mil (CPM)';
+        msg.innerText = '"Minas precisa de coragem em Brasília e trabalho nas cidades..."';
+      } else if (type === 'eng') {
+        foco.innerText = 'Engajamento';
+        publico.innerText = 'Envolvidos 180 dias + Interesses';
+        freq.innerText = '2.4 Impactos por user';
+        verba.innerText = '35% do Orçamento';
+        metrica.innerText = 'Custo por Engajamento (CPE)';
+        msg.innerText = '"Confira minha atuação e posicionamento contra a agenda da esquerda..."';
+      } else if (type === 'rem') {
+        foco.innerText = 'Remarketing';
+        publico.innerText = 'Visualizadores de Vídeo (75%+)';
+        freq.innerText = '4.8 Impactos por user';
+        verba.innerText = '15% do Orçamento';
+        metrica.innerText = 'Custo por Clique (CPC)';
+        msg.innerText = '"Veja o resultado das emendas que destinei para o interior no último mês..."';
+      }
+    }
+
+    // Atualização da Calculadora
+    function updateCalculator(value) {
+      const budget = parseInt(value);
+      
+      // Atualizar Labels
+      document.getElementById('budgetLabel').innerText = 'R$ ' + budget.toLocaleString('pt-BR');
+      document.getElementById('mediaValCalc').innerText = 'R$ ' + budget.toLocaleString('pt-BR');
+      
+      // Total
+      const total = 1500 + budget;
+      document.getElementById('totalValCalc').innerText = 'R$ ' + total.toLocaleString('pt-BR');
+      
+      // Projeções (CPM = R$12.00, Frequência = 1.5)
+      const cpm = 12;
+      const reach = Math.round((budget / cpm) * 1000);
+      const impressions = Math.round(reach * 1.5);
+      
+      document.getElementById('reachCalc').innerText = '~ ' + reach.toLocaleString('pt-BR') + ' mineiros';
+      document.getElementById('impressionsCalc').innerText = '~ ' + impressions.toLocaleString('pt-BR') + ' exibições';
+    }
+  </script>
+</body>
+
+</html>
